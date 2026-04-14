@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:id="@+id/dialogForgot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogBox"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/white_box">
+
+        <TextView
+            android:id="@+id/forgotTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_round"
+            android:backgroundTint="#AA7338"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:fontFamily="serif"
+            android:padding="10dp"
+
+            android:text="Reset Password"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Enter your email address:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/emailBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgotTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/emailBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgotTitle" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#AA7338"
+            android:fontFamily="serif"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/dialogBox"
+            app:layout_constraintEnd_toStartOf="@id/btnReset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailBox" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#AA7338"
+            android:fontFamily="serif"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/dialogBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

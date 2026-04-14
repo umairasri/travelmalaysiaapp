@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aesthetic_green"
+    tools:context=".state.MelakaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TravelMalaysia"
+        android:fontFamily="@font/amaranth_bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:autoPlay="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        app:videoId="3Mn_KDJHRsk" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jonkerstreetCardView"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    app:cardBackgroundColor="@color/light_white"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="205dp"
+                        android:background="@drawable/jonker_street" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="serif"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Jonker Street"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/melakariverCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="0.8in"
+                    android:layout_height="0.8in"
+                    android:background="@drawable/melakariver" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:paddingLeft="1.1in"
+                    android:text="Melaka River"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menaratamingsariCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="0.8in"
+                    android:layout_height="0.8in"
+                    android:background="@drawable/menaratamingsari" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:paddingLeft="1.1in"
+                    android:text="Menara Taming Sari"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelMalaysia"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kelatan.MuziumNegeriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kelatan.PasarTerapungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kelatan.MinFirefliesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pahang.Kuantan118Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pahang.FraserHIllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pahang.GentingThemeParkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NegeriSembilan.JelitaOstrichActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NegeriSembilan.UluBendulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NegeriSembilan.UncleWongHappyFarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Melaka.MelakaRiverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Melaka.MenaraTamingSariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Melaka.JonkerStreetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KualaLumpur.AquariaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KualaLumpur.SultanAbdulSamadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KualaLumpur.PetrosainsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Terengganu.PulauKapasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Terengganu.PulauRedangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Terengganu.MasjidKristalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Selangor.ZooNegaraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Selangor.SunwayLagoonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Selangor.BatuCavesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sarawak.KuchingEsplanadeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sarawak.BakoNationalParkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sarawak.NiahCaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sabah.SepilokOrangutanRehabilitationCentreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sabah.MountKinabaluActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sabah.DesaDairyFarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perlis.GuaKelamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perlis.HutanLipurBukitAyerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perlis.AlHussainMosqueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perak.IpohWorldActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perak.PangkorIslandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Perak.LostWorldTambunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Penang.TropicalSpiceGardenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Penang.EntopiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Penang.EscapeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kedah.LagendaParkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kedah.GunungJeraiResortActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kedah.SkybridgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Johor.SeaLifeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Johor.JurassicActivity"
+            android:exported="false"
+            android:label="@string/title_activity_jurassic"
+            android:theme="@style/Theme.TravelMalaysia" />
+        <activity
+            android:name=".Johor.LegolandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.KualaLumpurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.TerengganuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.SelangorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.SarawakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.SabahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.PerlisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.PerakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.PenangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.PahangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.NegeriSembilanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.MelakaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.KelantanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.KedahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".state.JohorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OpenAppActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMalaysia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

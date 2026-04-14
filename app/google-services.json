@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311807190913",
+    "project_id": "travelmalaysia-edcf2",
+    "storage_bucket": "travelmalaysia-edcf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311807190913:android:75d93baffe844f5f00aa80",
+        "android_client_info": {
+          "package_name": "com.example.travelmalaysia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo_-jvp0aHTXZDPGVOHkcWG3R4CHxCXvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

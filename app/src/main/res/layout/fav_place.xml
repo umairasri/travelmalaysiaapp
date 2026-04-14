@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Light"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/favImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/johorlegoland"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/favTextView"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="120dp"
+        android:fontFamily="serif"
+        android:text="Legoland"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/favBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/baseline_favorite_red_24" />
+
+</androidx.cardview.widget.CardView>

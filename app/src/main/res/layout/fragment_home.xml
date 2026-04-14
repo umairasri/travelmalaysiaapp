@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aesthetic_green"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-170dp">
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/aesthetic_green">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="serif"
+            android:text="FAMOUS PLACES"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="402dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/legoland_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/johorlegoland" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/skybridge_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/skybridge" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/minfireflies_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/min_fireflies" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/jonker_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/jonker_street" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/happyfarm_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/happy_farm" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/genting_cv"
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/aesthetic_green"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/genting_theme" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="413dp"
+            android:layout_height="268dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="serif"
+            android:text="LIST OF STATES"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerview"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="388dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            android:editable="false"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:hint="List of Places"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:src="@drawable/homepage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        </ImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

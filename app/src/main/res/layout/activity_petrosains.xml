@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aesthetic_green"
+    tools:context=".KualaLumpur.PetrosainsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="274dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/petrosains" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="671dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="615dp">
+
+            <ScrollView
+                android:layout_width="364dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="PERTROSAINS"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="48sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="8dp"
+                        android:text="Interactive science museum for kids, located in the Petronas Towers.Petrosains, also known as Petrosains, The Discovery Centre is a Malaysian science and technology museum located in the heart of Kuala Lumpur within Suria KLCC, Petronas Twin Towers. Petrosains was a brainchild of 4th Prime Minister Mahathir Mohamad and established on 25 March 1999.Interactive, experiential, and hands-on, Petrosains, The Discovery Centre is everything a science centre should be. With exhibits, in-reach and outreach activities that make learning STEM (science, technology, engineering and mathematics) fun, Petrosains is an extension of PETRONAS’ commitment to nation-building by nurturing the interest in STEM and driving the creation of a new generation of science and technology-minded, innovation-inspired Malaysians"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/aesthetic_green"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="6"
+                            android:backgroundTint="@color/dark_green"
+                            android:fontFamily="serif"
+                            android:text="GO TO WEBSITE"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aesthetic_green"
+    tools:context=".Sarawak.BakoNationalParkActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="274dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bakonationalpark" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="671dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="615dp">
+
+            <ScrollView
+                android:layout_width="364dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="BAKO NATIONAL PARK"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="48sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="8dp"
+                        android:text="One of Southeast Asia’s smallest national parks, Bako nevertheless contains almost all variety of Borneon vegetation. The star of Bako National Park is undoubtedly the proboscis money, the big-nosed, pot-bellied comedian of the rainforest. But the star has a supporting cast of long-tailed macaque monkeys, silvered leaf monkeys, monitor lizards, squirrels and flying lemurs that are easily seen in the park. They all perform against a lush backdrop made up of a bewildering diversity of plant and animal life. The journey to Bako National Park involves a 37-kilometre car ride from Kuching to Kampung Bako and from Kampung Bako a 20-minute boat ride to the park. And, the beauty of it is that you can easily visit the park in a day. But why hurry? If you want to be sure of seeing the full cast of animal characters, stay overnight in one of the park’s comfortable chalets provided with electricity from the main grid and treated water. There is also a cafeteria serving a variety of food and beverages. An interpretation centre is available where visitors can browse through information on the park’s resources. An education centre is dedicated for the use by school groups or other groups for the conduct of environmental or conservation education programs. Small bays, steep cliffs and sandy beaches make Bako’s coastline a delight. From the beach at Teluk Pandan Kecil, you can see Bako’s trademark, the rock formation called sea stack which had been carved by the waves for probably hundreds of years. For those who wish to enjoy serenity of nature, the Lakei Island is a great place to head to."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/aesthetic_green"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="6"
+                            android:backgroundTint="@color/dark_green"
+                            android:fontFamily="serif"
+                            android:text="GO TO WEBSITE"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

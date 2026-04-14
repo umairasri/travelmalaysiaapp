@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="aesthetic_green">#739072</color>
+    <color name="dark_green">#4D674F</color>
+    <color name="light_white">#D2D2D2</color>
+    <color name="beige">#F5F5DC</color>
+
+    <color name="my_secondary">#739072</color>
+
+
+
+
+</resources>

@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravelMalaysia" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/aesthetic_green</item>
+        <item name="colorPrimaryVariant">@color/aesthetic_green</item>
+        <item name="colorOnPrimary">@color/aesthetic_green</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/my_secondary</item>
+        <item name="colorSecondaryVariant">@color/my_secondary</item>
+        <item name="colorOnSecondary">@color/my_secondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/aesthetic_green</item>
+
+
+    </style>
+
+
+
+    <style name="Theme.TravelMalaysia" parent="Base.Theme.TravelMalaysia" />
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aesthetic_green"
+    tools:context=".Penang.TropicalSpiceGardenActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="274dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tropicalspicegardenpenang" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="671dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="615dp">
+
+            <ScrollView
+                android:layout_width="364dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="TROPICAL SPICE GARDEN"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="60sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="8dp"
+                        android:text="Asia's Hidden Eden! Timeless and enchanting, Tropical Spice Garden is an eco-attraction tucked within a natural valley fronting the Straits of Malacca. The showcase garden houses over 500 species of herb, spice and tropical plants. Explore and discover the fabulous diversity of nature as you through trails and pathways that meander through undulating hills, jungles terraces and natural streams. Garden Audio Tours available in 7 Languages: English, Chinese, Malay, Arabic, Japanese, German and French. Alternatively, you may take the Live Guided Tour that starts at 9am, 11am, and 1.30pm. The trails are slightly inclined so do wear comfortable walking shoes - unfortunately wheelchairs and strollers are not recommended."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/aesthetic_green"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="6"
+                            android:backgroundTint="@color/dark_green"
+                            android:fontFamily="serif"
+                            android:text="GO TO WEBSITE"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
